@@ -11,6 +11,7 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  OPENAI_API_VAR: ${{ vars.OPENAI_API_VAR }}
 
 jobs:
   test:
@@ -24,4 +25,5 @@ jobs:
         run: |
           echo "github token: $GITHUB_TOKEN"
           echo "openai key: $OPENAI_API_KEY"
+          echo "api var: $OPENAI_API_VAR"
           
