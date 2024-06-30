@@ -21,5 +21,5 @@ jobs:
       - name: Build with Gradle
         env:
           CLOUD_AWS_CREDENTIALS_ACCESS_KEY: ${{secrets.CLOUD_AWS_CREDENTIALS_ACCESS_KEY}}
-          CLOUD_AWS_CREDENTIALS_SECRET_KEY: ${{secrets.CLOUD_AWS_CREDENTIALS_SECRET_KEY}}
+#          CLOUD_AWS_CREDENTIALS_SECRET_KEY: ${{secrets.CLOUD_AWS_CREDENTIALS_SECRET_KEY}}
         run: ./gradlew build
